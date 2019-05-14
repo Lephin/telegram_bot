@@ -3,7 +3,7 @@ $offset=869742167;
 
 function getNewMessages($offset, $timeout = 30) {
     
-    $telegram_token_bot = '711172709:AAH0cOJZJT75PqdHvsD1hKY2rqbMUPNWEYw';
+    $telegram_token_bot = 'Здесь Ваш токен';
     $url  = "https://api.telegram.org/bot".$telegram_token_bot."/getUpdates?offset=$offset&timeout=$timeout";
     $body = `curl --insecure --socks5-hostname localhost:9050 $url 2>/dev/null`;
     return json_decode($body, 1);
