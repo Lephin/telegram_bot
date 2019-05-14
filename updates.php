@@ -45,7 +45,7 @@ do {
         if (!isset($word[ $text ]) && preg_match('~Федор~', $text) ) {
         $chatid = $item['message']['chat']['id'];
         If ($i != $l) {
-        $feed = `curl --insecure --socks5-hostname  localhost:9050 'https://api.telegram.org/bot711172709:AAH0cOJZJT75PqdHvsD1hKY2rqbMUPNWEYw/sendMessage?chat_id=$chatid&text=Я не понимаю тебя, человек.'`;  
+        $feed = `curl --insecure --socks5-hostname  localhost:9050 'https://api.telegram.org/Токен бота/sendMessage?chat_id=$chatid&text=Я не понимаю тебя, человек.'`;  
         $l = $latest; 
         }
         
@@ -57,7 +57,7 @@ do {
         $answer = $word[ $text ];
         
         If ($i != $l) {
-        $feed = `curl --insecure --socks5-hostname  localhost:9050 'https://api.telegram.org/bot711172709:AAH0cOJZJT75PqdHvsD1hKY2rqbMUPNWEYw/sendMessage?chat_id=$chatid&text=$answer'`;
+        $feed = `curl --insecure --socks5-hostname  localhost:9050 'https://api.telegram.org/Токен бота/sendMessage?chat_id=$chatid&text=$answer'`;
         $l = $latest; 
         }
     }
